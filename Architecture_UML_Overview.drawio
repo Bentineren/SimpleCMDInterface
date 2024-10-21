@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.0">
+  <diagram name="Page-1" id="G6hJM0si6fTuqYt6Moxb">
+    <mxGraphModel dx="2140" dy="1688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-jb9sMKj1SdotMRVWTlM-1" target="-jb9sMKj1SdotMRVWTlM-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-jb9sMKj1SdotMRVWTlM-1" target="-jb9sMKj1SdotMRVWTlM-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-1" value="BulletPointList (object)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-3" value="point 1 text, point 1 command&lt;div&gt;point 2 text, point 2 command&lt;/div&gt;&lt;div&gt;point 3 text, point 3 command&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="460" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="-jb9sMKj1SdotMRVWTlM-5" target="-jb9sMKj1SdotMRVWTlM-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-5" value="BulletPointList (object)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-jb9sMKj1SdotMRVWTlM-8" target="-jb9sMKj1SdotMRVWTlM-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-jb9sMKj1SdotMRVWTlM-8" target="-jb9sMKj1SdotMRVWTlM-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-8" value="BulletPointList (object)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-10" value="point 1 text, point 1 command&lt;div&gt;point 2 text, point 2 command&lt;/div&gt;&lt;div&gt;point 3 text, point 3 command&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="460" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-12" value="Super Object (Menu)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-22" value="Class BulletPoint&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TextToDisplay (string)&lt;/div&gt;&lt;div&gt;Action (class bulletpoint, method). Some method to call&lt;/div&gt;&lt;div&gt;IndentLevel (Hvis andre BulletPointLister findes)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="260" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-23" value="Action kan både være en metode eller en anden BulletPoint klasse. Uanset hvad vil en metode blive udført (Command Pattern), og denne metode kan også være at hente teksten for en undermenu (en" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="900" y="290" width="240" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-jb9sMKj1SdotMRVWTlM-24" target="-jb9sMKj1SdotMRVWTlM-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-24" value="Ansvaret for display ligger hos MenuObjektet (Midlertidigt kaldt Super Object).&lt;div&gt;Hvert underobjekt videregiver derfor hvad en action gør til Super Object (Hvis der er noget tekst der skal vises (undermenu f.eks))&lt;/div&gt;&lt;div&gt;Har derfor en liste over hvilke objekter der er skrevet op til at blive vist.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="600" y="-10" width="310" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-25" value="Første niveau: har f.eks tre menupunkter. Der klikkes på et menupunkt:&lt;div&gt;Første niveau plus undermenuen (nu med indentation level 1)&lt;/div&gt;&lt;div&gt;Print funktionen her tager derfor imod en tekst til at printe, og en indentationlevel for den tekst&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="70" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-jb9sMKj1SdotMRVWTlM-27" value="Class Super Object (Menu)&lt;div&gt;TextToDisplay&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-10" y="-20" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-1" value="Controller" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="920" y="600" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="XkceAxPqMecO4rNlu9bh-1" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="XkceAxPqMecO4rNlu9bh-1" vertex="1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-4" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="XkceAxPqMecO4rNlu9bh-1" vertex="1">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-5" value="MenuEntry" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="780" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-6" value="+ TextToDisplay: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="XkceAxPqMecO4rNlu9bh-5" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="XkceAxPqMecO4rNlu9bh-5" vertex="1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="XkceAxPqMecO4rNlu9bh-8" value="+ Action(): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="XkceAxPqMecO4rNlu9bh-5" vertex="1">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
