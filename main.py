@@ -6,8 +6,21 @@ class IAction:
         pass
 
 if __name__ == "__main__":
-    menuEntry1 = MenuItem("option 1", "no action currently set")
-    menuEntry2 = MenuItem("option 2", "no action currently set")
+    main_menu = [
+        MenuItem("Option 1", "no action defined"),
+        SubMenu("Submenu 1", [
+            MenuItem("Sub-option 1", "no action defined"),
+            MenuItem("Sub-option 2", "no action defined")
+        ]),
+        MenuItem("Option 3", "no action defined")
+    ]
 
-    mainMenu = Menu([menuEntry1, menuEntry2])
-    mainMenu.display()
+    controller = Menu(main_menu)
+    controller.display()
+    controller.handle_selection(2)
+
+
+"""
+Problem:
+The menu is displayed first, then the submenus are loaded, making the 
+"""
