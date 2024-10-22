@@ -1,40 +1,42 @@
 from abc import ABC, abstractmethod
 
-# underscore in front of private or protected variables
+# Underscore in front of private or protected variables
 # Python does not have a formal interface implementation.
 # Effectively implementing an interface by using the "pythonic way" of an abstract class only consisting of
-
-class MenuEntry(ABC):
-    def __init__(self, text):
-        self._text = text
-
-    def get_text(self):
-        """Return the text to display for this menu entry (Default implementation)."""
-        return self._text
+# an abstract method
 
 
+class IAction(ABC):
     @abstractmethod
     def action(self):
         """Perform the action associated with the menu entry."""
         pass
 
 
-class MenuItem(MenuEntry):
+class TextMixin(ABC):   # A Mixin is a class that provides certain functionality to classes without being complete
+    def __init__(self, text):
+        self._text = text
+
+    def get_text(self):
+        return self._text
+
+
+class MenuItem(IAction, TextMixin):
     def __init__(self, text, action):
-        super().__init__(text)
+        super().__init__(text,)     # Calling the TextMixin contructor
         self._action_callback = action
 
-    def action(self):
+    def action(self):   # Implementing IAction interface
         if self._action_callback:    # if an action is configured, it will be executed.
             return self._action_callback()
         else:
-            return self._text        # if no action is configured, it will display the text
+            return "No action defined!"
 
 
-class SubMenu(MenuEntry):
+class SubMenu(TextMixin):
     def __init__(self, text, submenu_entries):
         super().__init__(text)
         self._submenu_entries = submenu_entries
 
-    def action(self):
+    def get_submenu_entries(self):
         return self._submenu_entries
