@@ -7,20 +7,22 @@ class IAction:
 
 if __name__ == "__main__":
     main_menu = [
-        MenuItem("Option 1", "no action defined"),
+        MenuItem("Option 1", ""),
         SubMenu("Submenu 1", [
-            MenuItem("Sub-option 1", "no action defined"),
-            MenuItem("Sub-option 2", "no action defined")
+            MenuItem("Sub-option 1", ""),
+            MenuItem("Sub-option 2", "")
         ]),
-        MenuItem("Option 3", "no action defined")
+        MenuItem("Option 2", "")
     ]
 
     controller = Menu(main_menu)
     controller.display()
-    controller.handle_selection(2)
 
 
 """
 Problem:
-The menu is displayed first, then the submenus are loaded, making the 
+The menu is displayed first, then the submenus are loaded, making them apper under 
+Place state responsibility at menuEntry or the controller?
+Flexibility and agility over methods (MVC)?
+Separation of concerns?
 """

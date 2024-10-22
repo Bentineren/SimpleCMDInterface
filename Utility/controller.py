@@ -13,6 +13,7 @@ class Menu:
             indent = "   " * self._indentation_level
             print(f"{indent}└─ {entries.get_text()}")
 
+"""
     def handle_selection(self, choice):
         selected_entry = self._entries[choice -1 ]  # Get the chosen menu entry
         result = selected_entry.action()
@@ -23,7 +24,7 @@ class Menu:
             submenu.display()
         else:
             print(result)   # Display result (Text or Action
-
+"""
 
 
 
