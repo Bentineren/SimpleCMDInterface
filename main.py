@@ -10,9 +10,16 @@ if __name__ == "__main__":
         MenuItem("Option 1", ""),
         SubMenu("Submenu 1", [
             MenuItem("Sub-option 1", ""),
-            MenuItem("Sub-option 2", "")
+            MenuItem("Sub-option 2", ""),
+            SubMenu("Submenu 2", [
+                MenuItem("Sub-Sub-option 1", ""),
+                MenuItem("Sub-Sub-option 2", "")
+            ])
         ]),
-        MenuItem("Option 2", "")
+        MenuItem("Option 2", ""),
+        SubMenu("Submenu 3", [
+            MenuItem("Sub-option 3", "")
+        ])
     ]
 
     controller = Menu(main_menu)
